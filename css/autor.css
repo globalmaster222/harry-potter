@@ -1,0 +1,53 @@
+@import url(./home.css);
+
+
+
+.page {
+   padding: 100px 0 170px;
+}
+.page section{
+   margin-bottom: 75px;
+}
+.page section:last-child{
+   margin-bottom: 0;
+}
+.content-row {
+
+}
+.section-title {
+   
+}
+.name-body {
+   max-width: 1090px;
+}
+.title {
+   font-size: 38px;
+   font-weight: 600;
+   position: relative;
+}
+.title::before{
+   content: '';
+   position: absolute;
+   bottom: 0;
+   transform: translateY(25px);
+   width: 150px;
+   height: 5px;
+   background-color: #D1A61C;
+
+}
+.content-body p{
+   font-size: 20px;
+   line-height: 35px;
+   letter-spacing: 0.5%;
+   margin-top: 45px;
+   margin-left: 20px;
+   margin-bottom: 55px;
+}
+.imgs {
+   display: flex;
+   justify-content: center;
+   column-gap: 10px;
+}
+.imgs img{
+   height: 300px;
+}

@@ -1,0 +1,153 @@
+/* ---NULL STYLES-------------------------------- */
+@import url(./обнуление.css);
+
+/* ---FONTS-------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap);
+@font-face {
+   font-family: 'harryp';
+   src: url(./../fonts/harryp/HARRYP__.TTF);
+}
+
+
+/* ---GENERAL-------------------------------- */
+body{
+   font-family:  'Poppins', sans-serif;
+}
+.container {
+   max-width: 1230px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+.none{
+   display: none !important;
+}
+
+
+/* -----HEADER-------------------------------------- */
+.header {
+   background-color: #FFECB0;
+   padding: 20px 0;
+   position: sticky;
+   top: 0;
+   left: 0;
+   z-index: 50;
+}
+.header-row {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.header-logo {
+   font-family: 'harryp', sans-serif;
+   font-size: 42px;
+   color: #DFBA47;
+   transition: all 0.4s;
+}
+.header-logo:hover{
+   transform: scale(105%);
+}
+header nav ul li{
+   position: relative;
+   float: left;
+}
+header nav ul li a{
+   color: #D1A61C;
+   padding: 20px;
+   font-size: 16px;
+   display: block;
+   transition: all 0.2s;
+}
+header nav ul li a:hover{
+   transform: translateY(-5px) scale(105%);
+   opacity: 0.7;
+}
+nav ul li ul{
+   position: absolute;
+   left: 0;
+   width: 200px;
+   background-color: #FFECB0;
+   display: none;
+   box-shadow: 0px 0px 20px 0px rgba(66, 68, 90, 0.1);
+   border-radius: 10px;
+   z-index: 50;
+}
+nav ul li ul li{
+   width: 100%;
+}
+nav ul li:hover > ul{
+   display: block;
+}
+
+
+
+
+/* ---SECTION-------------------------------- */
+.section-home {
+   padding: 75px 0 170px;
+}
+.section-title {
+   font-family: 'harryp';
+   font-size: 82px;
+   color: #DFBA47;
+   margin-bottom: 100px;
+   text-align: center;
+}
+.cards-wraper {
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 70px;
+   row-gap: 70px;
+   transform: translate(3.41%);
+}
+.card {
+   background-color: rgba(0, 0, 0, 0.1);
+   border-radius: 20px;
+   transition: all 0.3s;
+}
+.card:hover{
+   box-shadow: 0px 0px 40px 0px rgba(66, 68, 90, 0.5);
+}
+.card img{
+   width: 326px;
+   height: 500px;
+   border-radius: 20px;
+   transition: all 0.3s;
+}
+.card:nth-last-child(1){
+   margin-bottom: 0;
+   
+}
+.card img:hover{
+   transform: translate(10px, -10px);
+}
+
+
+
+/* ---FOOTER-------------------------------- */
+.footer {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   padding: 45px 0 110px;
+   background-color: #FFECB0;
+   text-align: center;
+}
+.footer-content {
+}
+.footer-title {
+   font-size: 42px;
+   font-weight: 700;
+   color: #CFAC3E;
+   margin-bottom: 50px;
+}
+.footer-social {
+   display: flex;
+   column-gap: 40px;
+}
+.footer-social img{
+   width: 42px;
+   transition: all 0.2s;
+}
+.footer-social img:hover{
+   transform: translateY(-5px) scale(105%);
+}
